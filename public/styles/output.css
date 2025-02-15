@@ -575,11 +575,6 @@ video {
   font-family: Irish Grover, sans-serif;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-primary-light {
   --tw-text-opacity: 1;
   color: rgb(246 198 194 / var(--tw-text-opacity, 1));
