@@ -7,17 +7,18 @@ module.exports = {
         primary: {
           light: '#F6C6C2',
           dark: '#CEA4A0',
+          medium: '#F6C6C2'
         },
         secondary: {
-          light: '#D1E8E2',
+          light: '#C9B650',
           dark: '#49796B',
         },
         info: {
           light: '#A5B8FA',
-          dark: '#6271A0'
+          dark: '#116498'
         },
         neutral: {
-          light: '#FFFECE'
+          light: '#FAF1D2'
         }
       }
     },

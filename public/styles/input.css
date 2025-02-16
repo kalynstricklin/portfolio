@@ -10,3 +10,28 @@ html {
 .font-irish {
     font-family: 'Irish Grover', sans-serif;
 }
+
+.font-lucky{
+    font-family: 'Luckiest Guy', serif;
+}
+
+.font-space{
+    font-family: 'Space Mono', serif;
+}
+
+@layer components{
+    .btn{
+        @apply px-4 py-2 bg-neutral-light text-white rounded;
+    }
+}
+
+:root {
+    --color-primary: #FFFECE;
+    --color-secondary: #ecc94b;
+    /* ... */
+}
+
+.hoverComp:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
