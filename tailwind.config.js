@@ -10,7 +10,7 @@ module.exports = {
           medium: '#F6C6C2'
         },
         secondary: {
-          light: '#C9B650',
+          light: '#C7C675', //C7C675 C9B650
           dark: '#49796B',
         },
         info: {
