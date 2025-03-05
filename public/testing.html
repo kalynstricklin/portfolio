@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Luckiest+Guy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-secondary-light">
+
+<!--<div>-->
+<!--    <div class="relative justify-center items-center w-full">-->
+<!--        <div class="relative">-->
+<!--            <img class="w-[1100px] h-auto" src="./assets/trans-laptop.png" alt="laptop"/>-->
+
+<!--        </div>-->
+
+<!--    </div>-->
+
+
+<!--    <div class="absolute top-[20%] left-[15%] w-[70%] h-[60%] flex flex-col items-center justify-center text-white">-->
+<!--        <h1 class="text-info-dark font-lucky text-3xl">about me</h1>-->
+<!--        <img class="w-20 h-20 mt-2" src="./assets/kalyn-incircle.png" alt="Profile Image">-->
+<!--    </div>-->
+
+<!--    <div class="absolute bottom-[15%] left-[10%] w-[80%] text-center text-white">-->
+<!--        <h1 class="text-secondary-light font-lucky text-3xl">projects</h1>-->
+<!--    </div>-->
+
+<!--    <div class="absolute bottom-[5%] left-[10%] w-[80%] text-center text-white">-->
+<!--        <h1 class="text-secondary-light font-lucky text-3xl">links</h1>-->
+<!--    </div>-->
+<!--</div>-->
+
+    <nav class="flex justify-between bg-secondary-light z-50 sticky top-0 w-full align-middle text-end opacity-80">
+        <div class="ml-auto text-2xl font-space align-middle mt-4 text-neutral-light mr-4 sm:mx-auto sm:text-center">
+            <a href="#about" class="nav-link">about</a>
+            <a href="#projects" class="nav-link">projects</a>
+            <a href="#links" class="nav-link">links</a>
+        </div>
+    </nav>
+
+
+    <div class="mt-16 py-4 text-center">
+        <h1 class="p-2 font-lucky text-neutral-light text-6xl">Hello! I'm Kalyn Stricklin</h1>
+        <span class="font-space text-3xl text-neutral-light">and this is my portfolio</span>
+    </div>
+
+    <div id="kalyn" class="mt-5">
+        <div class="flex justify-center items-center">
+            <img class="hoverComp portrait:md" src="./assets/kalyn-incircle.png"/>
+        </div>
+    </div>
+
+
+    <div id="about" class="py-4 p-10">
+        <h1 class="text-left text-neutral-light font-space text-3xl mb-10">about me</h1>
+
+    </div>
+
+    <div id="projects" class="py-4 p-10">
+        <h1 class="text-left text-neutral-light font-space text-3xl mb-10">projects</h1>
+
+        <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5">
+            <!--Card 1-->
+            <div class="rounded shadow-lg bg-neutral-light p-2 project-card">
+                <img class="w-full" src="./assets/kalyn.jpg" alt="word journey">
+                <div class="px-6 py-4 text-info-dark">
+                    <div class="font-space text-2xl mb-2">Word Journey</div>
+                    <p class="text-gray-700 text-base">
+                        A semester-long project developing interactive word-based adventure game inspired by Wordle using Java, JSON, and Swing
+                    </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">Java</span>
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">JSON</span>
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">Swing</span>
+                </div>
+            </div>
+            <!--Card 2-->
+            <div class="rounded overflow-hidden shadow-lg bg-neutral-light p-2 project-card">
+                <img class="w-full" src="./assets/kalyn.jpg" alt="River">
+                <div class="px-6 py-4 text-info-dark">
+                    <div class="font-space text-2xl mb-2">GreenLens</div>
+                    <p class="text-gray-700 text-base">
+                       Developed an interactive web application designed to educate and encourage recycling through gamification.
+                    </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">React</span>
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">JavaScript</span>
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">Hackathon</span>
+                </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg bg-neutral-light p-2 project-card">
+                <img class="w-full" src="./assets/kalyn.jpg" alt="River">
+                <div class="px-6 py-4 text-info-dark">
+                    <div class="font-space text-2xl mb-2">GreenLens</div>
+                    <p class="text-gray-700 text-base">
+                        Developed an interactive web application designed to educate and encourage recycling through gamification.
+                    </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">React</span>
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">JavaScript</span>
+                    <span class="inline-block bg-info-dark rounded-full px-3 py-1 text-sm font-space text-neutral-light mr-2 mb-2">Hackathon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--        <div class="grid grid-cols-12 gap-4 md:grid-cols-6">-->
+<!--            <div class="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">-->
+<!--                <img src="./assets/kalyn.jpg"/>-->
+<!--            </div>-->
+<!--            <div class="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">-->
+<!--                <img src="./assets/kalyn.jpg"/>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+
+
+    <div id="links" class="py-4 p-10">
+        <h1 class="text-left text-neutral-light font-space text-3xl mt-5">links</h1>
+
+        <div class="grid-column col-span-2 md:col-span-6">
+            <div class="">
+                <!--            <div class="bg-secondary-light text-center">-->
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<!--<header class="bg-secondary-light">
+    <h1 class="p-2 text-neutral-light font-lucky text-4xl">Im Kalyn Stricklin</h1>
+    <p class="font-space">and this is my portfolio</p>
+</header>-->

@@ -19,7 +19,8 @@ module.exports = {
         },
         neutral: {
           light: '#FAF1D2'
-        }
+        },
+        dark: '#1f2022'
       }
     },
     screens: {
@@ -30,7 +31,7 @@ module.exports = {
       xxl: { max: "1535px" },
     },
     fontFamily:{
-      irish: ['Irish Grover', 'sans-serif']
+      slackey: ['Slackey', 'sans-serif']
     }
   },
   plugins: [
