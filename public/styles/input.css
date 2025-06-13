@@ -10,8 +10,8 @@ html,body {
 
 
 :root {
-    --color-primary: #1f2022;
-    --color-secondary: #ecc94b;
+    --color-primary: rgb(255,192,203);
+    --color-secondary: rgb(255, 255, 255);
 }
 
 
@@ -28,4 +28,8 @@ html,body {
     width: 400px;
     height: auto;
     border-radius: 20px;
+}
+
+.title{
+    margin: 0 auto;
 }

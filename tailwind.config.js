@@ -1,37 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/*.{html, js}"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        primary: {
-          light: '#F6C6C2',
-          dark: '#CEA4A0',
-          medium: '#F6C6C2'
-        },
-        secondary: {
-          light: '#C7C675', //C7C675 C9B650
-          dark: '#49796B',
-        },
-        info: {
-          light: '#A5B8FA',
-          dark: '#116498'
-        },
-        neutral: {
-          light: '#FAF1D2'
-        },
+        primary: 'rgb(255,192,203)', //rgb(255,192,203) rgb(247,127,190)
+        secondary: 'rgb(215,107,107)',
+        tertiary: 'rgb(255,250,250)',
         dark: '#1f2022'
       }
     },
-    screens: {
-      sm: { max: "639px" },
-      md: { max: "767px" },
-      lg: { max: "1023px" },
-      xl: { max: "1279px" },
-      xxl: { max: "1535px" },
-    },
     fontFamily:{
-      slackey: ['Slackey', 'sans-serif']
+      fraunces: ['Fraunces', 'serif']
     }
   },
   plugins: [
