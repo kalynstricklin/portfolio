@@ -18,8 +18,11 @@
 
 <header class="sticky top-0 glass border-b border-pink-700 dark:border-black shadow-sm z-50">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="text-2xl font-bold px-6 py-4 flex justify-between items-center">KS</div>
+
         <nav class="hidden md:flex items-center space-x-8">
             <a href="#about" class="hover:text-secondary transition-colors">About</a>
+            <a href="#skills" class="hover:text-secondary transition-colors">Skills</a>
             <a href="#projects" class="hover:text-secondary transition-colors">Projects</a>
             <a href="#contact" class="hover:text-secondary transition-colors">Contact</a>
         </nav>
@@ -47,44 +50,112 @@
     </div>
 </header>
 
+<section id="about" class="flex items-center justify-center pt-20">
+    <div class="container mx-auto px-6 py-12">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+            <div class="lg:w-1/2 mb-12 lg:mb-0">
+                <h1 class="text-5xl lg:text-7xl font-bold font-fraunces mb-6">
+                    Hi, I'm <span class="text-secondary typing-effect">Kalyn</span>
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 leading-relaxed">
+                    Software Developer passionate about creating innovative solutions and learning new things!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#projects" class="bg-secondary hover:bg-secondary/80 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl text-center">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 text-center">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 flex justify-center">
+                <div class="animate-float">
+                    <img class="portrait" src="./assets/kalyn.jpg" alt="Kalyn Stricklin"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="px-4 py-12 sm:px-6 lg:px-8">
+    <div class="mx-auto">
+        <h2 class="text-3xl font-bold font-fraunces mb-12">
+            Projects
+        </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6">
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="./assets/gameplay.gif" alt="WordJourney">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-dark text-xl mb-2">WordJourney</div>
+                    <p class="text-dark text-base">
+                        Wordle inspired adventure video game made with Java in a semester long group project.
+                    </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Java</span>
+                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Swing</span>
+                </div>
+            </div>
+
+<!--            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">-->
+<!--                <img class="w-full" src="./assets/gameplay.gif" alt="StockTrack">-->
+<!--                <div class="px-6 py-4">-->
+<!--                    <div class="font-bold text-dark text-xl mb-2">StockTrack</div>-->
+<!--                    <p class="text-dark text-base">-->
+
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="px-6 pt-4 pb-2">-->
+<!--                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">TypeScript</span>-->
+<!--                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Python</span>-->
+<!--                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Docker</span>-->
+<!--                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Vue</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="./assets/gameplay.gif" alt="OvaryAct">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-dark text-xl mb-2">OvaryAct</div>
+                    <p class="text-dark text-base">
+                        A period tracking app that tracks user's menstrual cycle, and mood.
+                    </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">React-Native</span>
+                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">TypeScript</span>
+                </div>
+            </div>
+
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="./assets/gameplay.gif" alt="IntelliJ-Plugin">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-dark text-xl mb-2">IntelliJ Plugin</div>
+                    <p class="text-dark text-base">
+                        A IntelliJ plugin to automate the creation of OpenSensorHub drivers.
+                    </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">TypeScript</span>
+                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Python</span>
+                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Docker</span>
+                    <span class="inline-block bg-primary rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Vue</span>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<!--<section id="contact">-->
+
+<!--</section>-->
+
 <footer class="footer">
     <span class="text-secondary dark:text-white">© 2025 <a href="https://stricklin.dev" >Kalyn Stricklin</a></span>
 </footer>
 </body>
 </html>
-
-
-
-<!--<img class="portrait" src="./assets/landingme.png" alt="Kalyn Stricklin"/>-->
-<!--<header>-->
-<!--    <nav class="flex justify-between sticky top-0 bg-primary-medium py-4">-->
-<!--        <div class="ml-auto text-3xl font-space mt-4 text-white mr-4 sm:mx-auto sm:text-center">-->
-<!--            <a href="http://stricklin.dev" title="Kalyn Stricklin">Kalyn Stricklin</a>-->
-<!--        </div>-->
-<!--    </nav>-->
-<!--</header>-->
-
-<!--<div id="kalyn" class="mt-5 flex justify-center align-middle">-->
-<!--    <img class="portrait" src="./assets/kalyn.jpg" alt="Kalyn Stricklin"/>-->
-
-<!--    <div class="mt-4 ml-10">-->
-<!--        <a href="https://github.com/kalynstricklin" target="_blank" class="text-white hover:text-gray-400">-->
-<!--            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">-->
-<!--                <path fill-rule="evenodd" clip-rule="evenodd"-->
-<!--                      d="M12 0.296C5.371 0.296 0 5.627 0 12.2c0 5.247 3.36 9.703 8.017 11.28.586.112.799-.253.799-.564 0-.278-.01-1.015-.015-1.992-3.26.717-3.947-1.587-3.947-1.587-.534-1.375-1.302-1.744-1.302-1.744-1.064-.717.08-.703.08-.703 1.177.082 1.796 1.23 1.796 1.23 1.047 1.8 2.748 1.28 3.42.977.105-.753.41-1.28.748-1.574-2.604-.295-5.34-1.305-5.34-5.818 0-1.285.46-2.335 1.22-3.158-.122-.295-.527-1.48.116-3.085 0 0 .996-.323 3.26 1.205.95-.265 1.972-.396 2.985-.4 1.014.004 2.037.135 2.985.4 2.265-1.528 3.26-1.205 3.26-1.205.643 1.605.238 2.79.116 3.085.76.823 1.22 1.873 1.22 3.158 0 4.52-2.74 5.52-5.353 5.81.42.364.796 1.084.796 2.184 0 1.576-.014 2.84-.014 3.225 0 .314.21.68.804.564C20.64 21.9 24 17.446 24 12.2c0-6.573-5.371-11.904-12-11.904z">-->
-<!--                </path>-->
-<!--            </svg>-->
-<!--        </a>-->
-
-<!--    </div>-->
-<!--</div>-->
-
-
-<!--    <div class="title text-center text-7xl lg:text-9x1 sm:text-8x1 font-fraunces font-extrabold tracking-tight">-->
-<!--        Kalyn Stricklin-->
-<!--    </div>-->
-
-
-
-
-
