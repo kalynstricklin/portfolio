@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kalyn</title>
+        <title>Kalyn Stricklin</title>
         <link href="./styles/output.css" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,68 +15,66 @@
     </head>
 
     <body class="striped-bg">
+        <canvas id="sparkle-canvas"></canvas>
 
         <header class="w-full py-4 px-6">
             <nav class="flex justify-center gap-8 text-lg font-fraunces">
-                <a href="http://stricklin.dev" class="nav-link">KALYN STRICKLIN</a>
-                <a href="./assets/kalynstricklin.pdf" target="_blank" class="nav-link">resume</a>
-                <a href="/about.html" class="nav-link">about</a>
-                <a href="mailto:kalyn@stricklin.dev" class="nav-link">contact</a>
-                <a href="https://github.com/kalynstricklin" target="_blank" class="nav-link">github</a>
+                <a href="/" class="nav-link wiggle-hover">KALYN STRICKLIN</a>
+                <a href="./assets/kalynstricklin.pdf" target="_blank" class="nav-link wiggle-hover">resume</a>
+                <a href="/about.html" class="nav-link wiggle-hover">about</a>
+                <a href="mailto:kalyn@stricklin.dev" class="nav-link wiggle-hover">contact</a>
+                <a href="https://github.com/kalynstricklin" target="_blank" class="nav-link wiggle-hover">github</a>
             </nav>
         </header>
 
-        <section class="hero-name py-8 slide-from-top">
-            <h1 class="text-center font-fraunces text-orange-500 text-6xl md:text-8xl lg:text-9xl font-bold tracking-wide">
-                kalyn stricklin
+        <section class="hero-name py-8 bounce-in">
+            <h1 class="text-center font-fraunces text-orange-500 text-6xl md:text-8xl lg:text-9xl font-bold tracking-wide rainbow-text">
+                <span class="wave-letter" style="--i:0">k</span><span class="wave-letter" style="--i:1">a</span><span class="wave-letter" style="--i:2">l</span><span class="wave-letter" style="--i:3">y</span><span class="wave-letter" style="--i:4">n</span><span class="wave-letter" style="--i:5">&nbsp;</span><span class="wave-letter" style="--i:6">s</span><span class="wave-letter" style="--i:7">t</span><span class="wave-letter" style="--i:8">r</span><span class="wave-letter" style="--i:9">i</span><span class="wave-letter" style="--i:10">c</span><span class="wave-letter" style="--i:11">k</span><span class="wave-letter" style="--i:12">l</span><span class="wave-letter" style="--i:13">i</span><span class="wave-letter" style="--i:14">n</span>
             </h1>
+            <p class="text-center text-white font-fraunces text-xl md:text-2xl mt-4 fade-in-delayed">software developer ~ maker of things ~ huntsville, al</p>
         </section>
 
-<!--        <section class="projects py-8 slide-from-top px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-8">-->
-<!--            <article class="">-->
+        <section class="projects py-12 px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+<!--            <article class="project-card pop-in" style="&#45;&#45;delay: 0.1s">-->
 <!--                <div>-->
-<!--                    <a href="" class="image-wrapper">-->
-<!--                        <img src="./assets/gameplay.gif">-->
+<!--                    <a href="#" class="image-wrapper">-->
+<!--                        <img src="./assets/gameplay.gif" alt="Word Journey gameplay">-->
 <!--                    </a>-->
 <!--                </div>-->
-<!--                <div class="project-space"></div>-->
 <!--                <div class="project-text">-->
-<!--                    <h1 class="project-title">Word Journey</h1>-->
+<!--                    <h2 class="project-title">Word Journey</h2>-->
+<!--                    <p class="project-desc">A word game adventure that takes you on a journey through language.</p>-->
 <!--                </div>-->
 <!--            </article>-->
 
-<!--            <article class="">-->
+            <article class="project-card pop-in" style="--delay: 0.3s">
+                <div>
+                    <a href="http://kalynandjack.love" target="_blank" class="image-wrapper">
+                        <img src="./assets/img.png" alt="Wedding website">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2 class="project-title">Wedding Website</h2>
+                    <p class="project-desc">A custom wedding site built with love (and code).</p>
+                </div>
+            </article>
+
+<!--            <article class="project-card pop-in" style="&#45;&#45;delay: 0.5s">-->
 <!--                <div>-->
-<!--                    <a href="http://kalynandjack.love" target="_blank" class="image-wrapper">-->
-<!--                        <img src="./assets/wedding.png">-->
+<!--                    <a href="#" class="image-wrapper">-->
+<!--                        <img src="./assets/ovary.png" alt="OvaryAct app">-->
 <!--                    </a>-->
 <!--                </div>-->
-<!--                <div class="project-space"></div>-->
 <!--                <div class="project-text">-->
-<!--                    <h1 class="project-title">Wedding Website</h1>-->
+<!--                    <h2 class="project-title">OvaryAct</h2>-->
+<!--                    <p class="project-desc">Health tracking that doesn't take itself too seriously.</p>-->
 <!--                </div>-->
 <!--            </article>-->
-<!--            <article class="">-->
-<!--                <div>-->
-<!--                    <a href="" class="image-wrapper">-->
-<!--                        <img src="./assets/ovary.png">-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="project-space"></div>-->
-<!--                <div class="project-text">-->
-<!--                    <h1 class="project-title">OvaryAct</h1>-->
-<!--                </div>-->
-<!--            </article>-->
-<!--        </section>-->
-
-        <section>
-
         </section>
 
-
-        <footer class="green-bg mt-auto py-4 text-center">
-            <h4 class="footer-text text-primary">© <a href="https://stricklin.dev">KALYN STRICKLIN</a></h4>
-            <h4 class="footer-text text-primary">ALL RIGHTS RESERVED</h4>
+        <footer class="green-bg mt-auto py-6 text-center">
+            <div class="footer-flower">~ * ~ * ~</div>
+            <h4 class="footer-text text-primary">made with care by <a href="https://stricklin.dev">KALYN STRICKLIN</a></h4>
         </footer>
     </body>
 </html>

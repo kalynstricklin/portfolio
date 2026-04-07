@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalyn</title>
+    <title>About ~ Kalyn</title>
     <link href="./styles/output.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,39 +16,61 @@
 
 <body class="green-bg">
 
-
 <header class="w-full py-4 px-6">
     <nav class="flex justify-center gap-8 text-lg font-fraunces">
-        <a href="/" class="nav-link">KALYN STRICKLIN</a>
-
-        <a href="./assets/kalynstricklin.pdf" target="_blank" class="nav-link">resume</a>
-        <a href="#about" class="nav-link">about</a>
-        <a href="#contact" class="nav-link">contact</a>
-        <a href="https://github.com/kalynstricklin" target="_blank" class="nav-link">github</a>
+        <a href="/" class="nav-link wiggle-hover">KALYN STRICKLIN</a>
+        <a href="./assets/kalynstricklin.pdf" target="_blank" class="nav-link wiggle-hover">resume</a>
+        <a href="/about.html" class="nav-link wiggle-hover">about</a>
+        <a href="mailto:kalyn@stricklin.dev" class="nav-link wiggle-hover">contact</a>
+        <a href="https://github.com/kalynstricklin" target="_blank" class="nav-link wiggle-hover">github</a>
     </nav>
 </header>
 
-
-<section class="hero-name py-8">
+<section class="hero-name py-8 bounce-in">
     <h1 class="text-center font-fraunces text-primary text-6xl md:text-8xl lg:text-9xl font-bold tracking-wide">
-        kalyn stricklin
+        about me
     </h1>
 </section>
 
-<section id="about" class="about-section py-16 px-6 md:px-12 lg:px-24">
+<section class="about-section py-16 px-6 md:px-12 lg:px-24">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-        <div class="about-image">
-            <img src="./assets/kalynportfolio.png" alt="Kalyn" class="rounded-lg shadow-lg w-full">
+        <div class="about-image pop-in" style="--delay: 0.2s">
+            <img src="./assets/kalynportfolio.png" alt="Kalyn" class="rounded-lg shadow-lg w-full tilt-hover">
         </div>
-        <div class="about-text">
-            <p class="text-lg md:text-xl leading-relaxed text-primary">
-                Hi, I'm Kalyn! I'm a software developer who loves building things - whether that's through code or in the
-                ceramic studio. When I am not at my computer you can find me climbing
-                rocks at my local gym!
+        <div class="about-text pop-in" style="--delay: 0.4s">
+            <p class="text-2xl md:text-3xl leading-relaxed text-primary font-fraunces mb-4">
+                Hey there!
             </p>
+            <p class="text-lg leading-relaxed text-pink-light mb-4">
+                I'm Kalyn, a software developer based in Huntsville, Alabama.
+                I love building things that are useful, beautiful, and maybe a little weird.
+            </p>
+            <p class="text-lg leading-relaxed text-pink-light mb-4">
+                When I'm not writing code, you can find me dreaming up new projects,
+                tinkering with designs, or probably convincing myself that this one more
+                side project is definitely the one I'll finish.
+            </p>
+            <p class="text-lg leading-relaxed text-pink-light">
+                I believe the best software has personality. If it doesn't make
+                you smile at least once, what's the point?
+            </p>
+
+            <div class="fun-facts mt-8">
+                <h3 class="text-primary font-fraunces text-xl mb-3">fun facts ~</h3>
+                <ul class="fact-list">
+                    <li class="fact-item">I built my own wedding website from scratch</li>
+                    <li class="fact-item">I think pink is a perfectly professional color</li>
+                    <li class="fact-item">My commit messages are sometimes poems</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
+
+<footer class="green-bg-dark mt-auto py-6 text-center">
+    <div class="footer-flower">~ * ~ * ~</div>
+    <h4 class="footer-text text-primary">made with care by <a href="https://stricklin.dev">KALYN STRICKLIN</a></h4>
+</footer>
 
 </body>
 </html>
