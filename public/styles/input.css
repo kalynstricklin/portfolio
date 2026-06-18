@@ -11,9 +11,15 @@ body {
     min-height: 100vh;
     width: 100%;
     margin: 0;
+
     display: flex;
     flex-direction: column;
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><text y='16' font-size='16'>*</text></svg>"), auto;
+
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .font-fraunces {
@@ -69,82 +75,6 @@ body {
     z-index: 9999;
 }
 
-/* ---- Wave Letters ---- */
-
-.wave-letter {
-    display: inline-block;
-    animation: wave 2s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.08s);
-}
-
-@keyframes wave {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
-}
-
-.rainbow-text .wave-letter {
-    animation: wave 2s ease-in-out infinite, colorShift 6s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.08s), calc(var(--i) * 0.3s);
-}
-
-@keyframes colorShift {
-    0%, 100% { color: rgb(249, 115, 22); }
-    25% { color: rgb(236, 72, 153); }
-    50% { color: rgb(168, 85, 247); }
-    75% { color: rgb(249, 168, 37); }
-}
-
-/* ---- Bounce In ---- */
-
-.bounce-in {
-    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-}
-
-@keyframes bounceIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.3) translateY(40px);
-    }
-    60% {
-        transform: scale(1.05) translateY(-5px);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-    }
-}
-
-/* ---- Pop In (staggered) ---- */
-
-.pop-in {
-    opacity: 0;
-    animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-    animation-delay: var(--delay, 0s);
-}
-
-@keyframes popIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.8) rotate(-2deg);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-    }
-}
-
-/* ---- Fade In Delayed ---- */
-
-.fade-in-delayed {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 0.6s;
-}
-
-@keyframes fadeIn {
-    to { opacity: 1; }
-}
-
 /* ---- Wiggle on Hover ---- */
 
 .wiggle-hover:hover {
@@ -194,82 +124,6 @@ body {
 
 .nav-link:hover::after {
     width: 100%;
-}
-
-/* ---- Project Cards ---- */
-
-.project-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-8px) rotate(-1deg);
-    box-shadow: 0 12px 32px rgba(249, 115, 22, 0.2);
-}
-
-.image-wrapper {
-    display: block;
-    width: 100%;
-    height: 260px;
-    overflow: hidden;
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.project-card:hover .image-wrapper img {
-    transform: scale(1.08);
-}
-
-.project-text {
-    padding: 20px;
-}
-
-.project-title {
-    font-family: 'Fraunces', sans-serif;
-    font-weight: 600;
-    line-height: 1.4em;
-    color: hsla(91.58, 60%, 18.63%, 1);
-    margin: 0 0 8px 0;
-    font-size: 1.5rem;
-}
-
-.project-desc {
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-/* ---- Fun Facts ---- */
-
-.fact-list {
-    list-style: none;
-    padding: 0;
-}
-
-.fact-item {
-    color: rgba(255, 220, 230, 0.85);
-    padding: 6px 0;
-    padding-left: 24px;
-    position: relative;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.fact-item::before {
-    content: '~';
-    position: absolute;
-    left: 4px;
-    color: rgb(249, 115, 22);
-    font-weight: bold;
 }
 
 /* ---- Footer ---- */
